@@ -103,9 +103,10 @@ def play board
     turn board
   end
   if won? board
-    winner board
+    puts "Congratulations #{winner(board)}!"
     return
   elsif draw? board
+    puts "Cat's Game!"
     return
   end
 end
