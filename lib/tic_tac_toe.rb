@@ -41,6 +41,8 @@ def turn board
   if valid_move? board, index
     move board, index, char
     display_board board
+  else
+    turn board
   end
 end
 def turn_count board
