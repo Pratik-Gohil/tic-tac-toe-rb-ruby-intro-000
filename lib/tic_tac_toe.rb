@@ -102,8 +102,8 @@ def play board
   turn board
   if won? board
     winner board
-    break
+    return
   elsif draw? board
-    break
+    return
   end
 end
