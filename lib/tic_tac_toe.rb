@@ -99,7 +99,9 @@ def winner board
   return board[won?(board)[0]] if won? board
 end
 def play board
-  turn board
+  until over? board
+    turn board
+  end
   if won? board
     winner board
     return
